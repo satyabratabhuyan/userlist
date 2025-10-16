@@ -11,33 +11,35 @@ lifecycle = "2.8.5"
 navigation = "2.8.3"
 mockk = "1.13.12"
 junit = "4.13.2"
+coreKtx = "1.13.1"
+hiltNavigation = "1.2.0"
 
 [libraries]
-androidx-core-ktx = "androidx.core:core-ktx:1.13.1"
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 
-compose-ui = "androidx.compose.ui:ui"
-compose-ui-tooling = "androidx.compose.ui:ui-tooling"
-compose-material3 = "androidx.compose.material3:material3"
-compose-navigation = "androidx.navigation:navigation-compose"
+compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "compose" }
+compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "compose" }
+compose-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "compose" }
+compose-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation" }
 
-lifecycle-runtime = "androidx.lifecycle:lifecycle-runtime-ktx"
-lifecycle-viewmodel = "androidx.lifecycle:lifecycle-viewmodel-compose"
+lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycle" }
 
-coroutines-core = "org.jetbrains.kotlinx:kotlinx-coroutines-core"
-coroutines-android = "org.jetbrains.kotlinx:kotlinx-coroutines-android"
+coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
 
-hilt-android = "com.google.dagger:hilt-android"
-hilt-compiler = "com.google.dagger:hilt-compiler"
-hilt-navigation = "androidx.hilt:hilt-navigation-compose:1.2.0"
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+hilt-navigation = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigation" }
 
-retrofit = "com.squareup.retrofit2:retrofit"
-retrofit-moshi = "com.squareup.retrofit2:converter-moshi"
-okhttp-logging = "com.squareup.okhttp3:logging-interceptor"
-moshi = "com.squareup.moshi:moshi-kotlin"
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-moshi = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "retrofit" }
+okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+moshi = { group = "com.squareup.moshi", name = "moshi-kotlin", version.ref = "moshi" }
 
-junit = "junit:junit"
-mockk = "io.mockk:mockk"
-coroutines-test = "org.jetbrains.kotlinx:kotlinx-coroutines-test"
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
+coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
