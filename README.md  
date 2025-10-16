@@ -1,0 +1,25 @@
+## Features
+- **User List Screen:** Displays users from API with click navigation.
+- **User Detail Screen:** Shows details of selected user.
+- **Network Layer:** Retrofit + Moshi.
+- **DI:** Hilt dependency injection.
+- **ViewModel + StateFlow:** Clean state management.
+- **Jetpack Compose:** Declarative UI with Navigation.
+- **Coroutines + Flow:** Async data fetching.
+- **Unit Tests:** Basic test for ViewModel.
+- **Version Catalog:** TOML-based dependency management (`libs.versions.toml`).
+
+---
+
+## Technologies Used
+- Kotlin 1.9
+- Android Gradle Plugin 8.5
+- Jetpack Compose 1.7.3
+- Hilt 2.52
+- Retrofit 2.11 + Moshi 1.15
+- Coroutines 1.8
+- Lifecycle 2.8.5
+- Navigation Compose 2.8.3
+- OkHttp Logging Interceptor
+- Unit Testing: JUnit 4, MockK
+- Gradle Version Catalog (TOML)

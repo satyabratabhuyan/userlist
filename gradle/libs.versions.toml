@@ -1,0 +1,45 @@
+[versions]
+kotlin = "1.9.23"
+compose = "1.7.3"
+agp = "8.5.1"
+hilt = "2.52"
+retrofit = "2.11.0"
+okhttp = "5.0.0-alpha.12"
+moshi = "1.15.1"
+coroutines = "1.8.1"
+lifecycle = "2.8.5"
+navigation = "2.8.3"
+mockk = "1.13.12"
+junit = "4.13.2"
+
+[libraries]
+androidx-core-ktx = "androidx.core:core-ktx:1.13.1"
+
+compose-ui = "androidx.compose.ui:ui"
+compose-ui-tooling = "androidx.compose.ui:ui-tooling"
+compose-material3 = "androidx.compose.material3:material3"
+compose-navigation = "androidx.navigation:navigation-compose"
+
+lifecycle-runtime = "androidx.lifecycle:lifecycle-runtime-ktx"
+lifecycle-viewmodel = "androidx.lifecycle:lifecycle-viewmodel-compose"
+
+coroutines-core = "org.jetbrains.kotlinx:kotlinx-coroutines-core"
+coroutines-android = "org.jetbrains.kotlinx:kotlinx-coroutines-android"
+
+hilt-android = "com.google.dagger:hilt-android"
+hilt-compiler = "com.google.dagger:hilt-compiler"
+hilt-navigation = "androidx.hilt:hilt-navigation-compose:1.2.0"
+
+retrofit = "com.squareup.retrofit2:retrofit"
+retrofit-moshi = "com.squareup.retrofit2:converter-moshi"
+okhttp-logging = "com.squareup.okhttp3:logging-interceptor"
+moshi = "com.squareup.moshi:moshi-kotlin"
+
+junit = "junit:junit"
+mockk = "io.mockk:mockk"
+coroutines-test = "org.jetbrains.kotlinx:kotlinx-coroutines-test"
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
