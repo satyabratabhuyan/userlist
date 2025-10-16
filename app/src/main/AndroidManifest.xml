@@ -2,7 +2,7 @@
     package="com.satya">
     <application
         android:name="dagger.hilt.android.HiltAndroidApp"
-        android:label="SingleModuleApp"
+        android:label="UserListApp"
         android:theme="@style/Theme.Material3.DayNight.NoActionBar">
         <activity android:name=".MainActivity">
             <intent-filter>
